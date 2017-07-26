@@ -1,6 +1,12 @@
 $(function() {
     $(document).ready(function(){
 
+        /*preloader*/
+
+        $(window).on("load", function(){
+            $('.preloader').delay(1600).fadeOut("slow");
+        });
+
 		/* **************Parallax************ */
         //header
         $('.parallax-header').parallax({
@@ -76,12 +82,6 @@ $(function() {
             autoplay: true
         });
 
-		/*contacts*/
-		$("#email-input").focus(function(){
-            $(this).val("").css({"font-style": "normal", "color": "black"});
-        }).blur(function () {
-            $(this).val("enter your email...").css({"font-style": "italic", "color": "#cdcdcd"});
-        });
 
 
     });

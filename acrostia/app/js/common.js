@@ -1,6 +1,11 @@
 $(function() {
 	$(document).ready(function(){
 
+	    //preloader
+        $(window).on("load", function(){
+            $('.preloader').delay(300).fadeOut("slow");
+        });
+
 	    //window height
         function heightDetect() {
             $("#Home").css("height", $(window).height());
@@ -76,6 +81,7 @@ $(function() {
             if($("#contacts-link").hasClass("active")){
                 $("body").css({"background" : " url('../img/contacts/bg.png') no-repeat center #75b4aa",
                     "background-size" : "cover"});
+                myMap();
             }
         });
 
@@ -97,7 +103,6 @@ $(function() {
                  $(".btn-tablinks-work").hide();
              }
         });
-
     });
 });
 
@@ -146,8 +151,6 @@ function myMap() {
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
 }
-
-
 
 
 

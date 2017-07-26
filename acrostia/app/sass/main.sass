@@ -13,6 +13,54 @@ body
 	opacity: 1
 	height: 100%
 	
+/***************PRELOADER******************/
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity($opacity))
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 100
+	background-color: $main_color
+	.pre-load
+		position: relative
+		left: 50%
+		top: 50vh
+		margin:
+			left: -40px
+			top: -40px
+		&::before, &::after
+			content: ""
+			border: 5px solid $btn_hover_color
+			height: 80px
+			width: 80px
+			border-radius: 500px
+			position: absolute
+		&::before
+			animation: pulse-outer 1s ease-in infinite
+		&::after
+			animation: pulse-inner 1s linear infinite
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	30%
+		@include opacity(30)
+	70%
+		@include opacity(70)
+	100%
+		@include opacity(0)
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+/*******************************************************/
+
 /**********************HEADER**************************/
 header
 	transition: 0.5s linear
@@ -456,11 +504,14 @@ header
 					height: 140px
 					margin: 10px 0
 					
-					
-#googleMap
+.map
 	width: 260px
 	height: 200px
 	margin: 60px auto 20px auto
+	#googleMap
+		width: 259px
+		height: 200px
+
 
 footer
 	transition: 1s ease-in

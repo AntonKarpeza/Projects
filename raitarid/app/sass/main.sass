@@ -1,0 +1,1122 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+/* *********************HEADER******************* */
+header
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 5
+#header
+	height: 69px
+	background-color: $background_color
+	//___________________________logo
+	.logo320
+		margin: 10px 0 0 12px
+	.logo480
+		margin: 2px 0 0 20px
+	.logo768
+		margin: 20px 0 0 35px
+	.logo1000
+		margin: 10px 0 0 30px
+	//___________________________map
+	.map
+		padding-top: 14px
+		img
+			margin: 4px 8px 0 0
+			float: left
+		p
+			margin: 0
+	//___________________________phone
+	.phone
+		font-size: 16px
+		padding-top: 16px
+		img
+			float: left
+			margin-right: 8px
+		p
+			margin-top: 7px
+	//__________________________basket
+	.basket320
+		padding-top: 20px
+		font-size: 9px
+		img
+			margin: 0 10px 0 0
+			float: left
+	.basket480
+		padding-top: 15px
+		img
+			margin: 0 10px 0 0
+			float: left
+		p
+			text-transform: uppercase
+			margin: 0
+	//menu
+	.menu_img
+		position: absolute
+		top: 18px
+		right: 15px
+		cursor: pointer
+		&:hover
+			opacity: 0.6
+nav
+	background-color: $btn_color
+.navigate
+	width: 100%
+	ul
+		margin: 0
+		list-style-type: none
+		li
+			text-align: center
+			a
+				text-transform: uppercase
+				padding: 13px 16px
+				text-decoration: none
+				color: white
+				&:hover
+					background-color: black
+
+
+
+/* ******************FOOTER******************* */
+footer
+	background-color: $background_color
+	.foot_block
+		span
+			text-transform: uppercase
+			font-weight: bold
+		#foot_contacts
+			width: 225px
+			margin: 0 auto
+			#foot_map
+				padding-top: 10px
+				img
+					float: left
+					margin: 2px 15px 0 0
+			#foot_tel
+				padding-top: 5px
+				img
+					float: left
+					margin: 0 15px 15px 0
+			#foot_socnet
+				img
+					margin: 5px
+					border: solid #d5d5d6 1px
+					border-radius: 3px
+					cursor: pointer
+					&:hover
+						border-color: $main_color
+		#foot_info
+			width: 150px
+			margin: 0 auto
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+				li
+					padding-top: 10px
+					a
+						text-decoration: underline
+						color: $main_color
+		#foot_logo
+			width: 230px
+			margin: 0 auto
+			p
+				padding-left: 5px
+				display: inline-block
+				font-size: 12px
+				line-height: 15px
+		#foot_registration
+			margin: 0 auto
+			p
+				line-height: 17px
+				color: #868585
+		.foot_webcity
+			width: 150px
+			margin: 0 auto
+			p
+				font-size: 9px
+
+
+
+/*****************ALLTRIFLE***********************/
+#all_trifle
+	position: relative
+	background: url("../img/main/alltrifle.png") center center no-repeat
+	background-size: cover
+	border-bottom: solid $btn_color 1px
+	p
+		position: absolute
+		font-weight: bold
+		&:hover
+			cursor: default
+
+
+
+/*******************PRODUCTS CATALOG***********************/
+#product_catalog
+	border-top: solid $border_color 1px
+	h3
+		margin: 0
+		text-align: center
+		text-transform: uppercase
+		font-weight: 300
+.block_prod_catalog
+	margin: 30px auto 10px auto
+	border: solid $border_color 1px
+	&:hover
+		box-shadow: 0 0 5px grey
+	.block_head_pr_cat
+		padding: 15px 0
+		text-align: center
+		p
+			font-size: 16px
+			text-transform: uppercase
+			position: absolute
+			display: block
+			width: 260px
+			left: 50%
+			top: 15px
+			-ms-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+		img
+			margin-top: 50px
+	.block_body_pr_cat
+		height: 185px
+		width: 100%
+		position: relative
+		background: url(../img/main/prodcatalog/background.png) no-repeat center
+		background-size: cover
+		text-align: center
+		padding-top: 15px
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li
+				padding-bottom: 5px
+				a
+					text-decoration: underline
+					color: black
+					&:hover
+						color: $main_color
+		.btn-raitaid
+			position: absolute
+			text-align: center
+			bottom: -40px
+			left: 50%
+			-ms-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+			a
+				display: block
+				border-radius: 3px
+				padding: 11px 35px 0 35px
+				text-transform: uppercase
+				text-decoration: none
+				color: white
+				height: 40px
+				width: 185px
+				background-color: $main_color
+				&:hover
+					background-color: $btn_color
+					text-decoration: none
+					color: white
+
+
+
+/**************BTN - ALLCATALOG**********************/
+#btn-allcatalog
+	font-weight: bold
+	text-align: center
+	margin: 10px 0
+	a
+		margin: 0 auto
+		padding: 13px
+		display: block
+		text-decoration: none
+		color: white
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+		img
+			margin-left: 10px
+
+
+
+/*******************COMPANIES SLIDER**********************/
+#companies-slider
+	height: 110px
+	margin: 20px auto 0 auto
+	.item
+		margin: 0 auto
+		padding-top: 20px
+		width: 158px
+
+/*owl*/
+.owl-theme .owl-nav
+	-webkit-tap-highlight-color: transparent
+.owl-theme .owl-nav [class*='owl-']
+	display: inline-block
+	cursor: pointer
+/*owl-buttons*/
+.companies-prev, .companies-next
+	img
+		cursor: pointer
+		position: absolute
+		top: 45px
+		background-color: transparent
+		width: 11px
+		height: 23px
+.companies-prev:hover, .companies-next:hover
+	opacity: 0.5
+
+
+
+/*******************OUR ADVANTAGES************************/
+#our-advantages
+	text-align: center
+	#head-our-advantages
+		h3
+			text-transform: uppercase
+			font-weight: 300
+			font-size: 27px
+	#body-our-advantages
+		img
+			margin: 45px 0 30px 0
+		p
+			font-size: 16px
+			text-transform: uppercase
+
+
+
+/*****************TAB POPULAR-NEW-SPEC********************/
+#pop-new-spec
+	margin-top: 40px
+.tab-head
+	overflow: hidden
+	margin: 0 auto
+	button
+		text-transform: uppercase
+		background-color: transparent
+		float: left
+		outline: none
+		cursor: pointer
+		text-align: center
+		color: $btn_color
+		padding: 14px 0
+		transition: 0.4s
+		font-size: 17px
+		border: none
+		border-bottom: solid transparent 3px
+		&:hover
+			cursor: pointer
+		&.active
+			font-weight: bold
+			color: $main_color
+			border-bottom: solid $btn_color 3px
+
+.tab-body
+	position: relative
+	height: 460px
+	.tabcontent
+		display: none
+		padding: 22px 0
+		.owl-pns
+			margin: 0 auto
+			text-align: center
+			.pns-item
+				height: 400px
+				margin: 7px
+				padding-top: 40px
+				text-align: center
+				img
+					width: 189px
+					height: 165px
+					margin: 0 auto
+				ul
+					margin: 0
+					padding: 0
+					list-style-type: none
+					li:nth-child(1)
+						padding-top: 15px
+					li:nth-child(4)
+						color: grey
+						padding-top: 5px
+					li:nth-child(5)
+						padding-top: 10px
+						color: $main_color
+						span
+							font-size: 22px
+							font-weight: bold
+				.btn-pns
+					display: none
+				a
+					left: 50%
+					-ms-transform: translate(-50%, -50%)
+					transform: translate(-50%, -50%)
+					top: 370px
+					position: absolute
+					width: 190px
+					height: 40px
+					display: block
+					text-transform: uppercase
+					text-decoration: none
+					background-color: $main_color
+					border-radius: 3px
+					span
+						color: white
+						margin: 11px 40px 0 0
+						display: block
+					img
+						margin: 8px 0 0 50px
+						float: left
+						border: none
+						height: 22px
+						width: 24px
+/*owl-buttons*/
+.tpns-prev, .tpns-next
+	position: absolute
+	top: 195px
+	background-color: white
+	width: 11px
+	height: 23px
+.tpns-prev:hover, .tpns-next:hover
+	opacity: 0.5
+
+
+
+/*****************INFO_CENTER********************/
+#info-center
+	background: url('../img/main/info-center/bg.png') no-repeat center
+	background-size: cover
+	height: 640px
+	#head-info-center
+		text-align: center
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 300
+		padding-top: 10px
+	
+	#body-info-center
+		.owl-info
+			margin: 0 auto
+			.info-item
+				margin: 0 auto
+				height: 500px
+				.head-info-item
+					span
+						text-transform: uppercase
+						font-weight: bold
+						margin-top: 20px
+						display: block
+				.body-info-item
+					position: relative
+					img
+						margin-top: 20px
+					a
+						text-transform: uppercase
+						display: block
+						height: 40px
+						width: 180px
+						color: black
+						text-decoration: none
+						border: solid black 1px
+						border-radius: 3px
+						text-align: center
+						padding-top: 10px
+						position: absolute
+						left: 50%
+						-ms-transform: translate(-50%, -50%)
+						transform: translate(-50%, -50%)
+						&:hover
+							color: white
+							border-color: $main_color
+							background-color: $main_color
+
+/*owl-buttons*/
+.info-prev, .info-next
+	position: absolute
+	background-color: transparent
+	width: 11px
+	height: 23px
+.info-prev:hover, .info-next:hover
+	opacity: 0.5
+
+
+
+
+
+//---------------------------------CATALOG PRODUCT LIST - GRID VIEW-------------------------------
+
+/*HEADER IMG*/
+#header-img
+	background: url('../img/cat_pl/header.png') no-repeat center
+	background-size: cover
+	border-bottom: solid $btn_color 1px
+
+/*MENU CATALOG*/
+.route-catalog
+	font-size: 11px
+	a
+		text-decoration: underline
+		color: $main_color
+	p
+		margin: 0
+		display: inline-block
+	h3
+		font-size: 29px
+		text-transform: uppercase
+		font-weight: 300
+		margin: 15px 0 0 0
+.description-catalog
+	margin: 20px 0 30px 0
+.menu-catalog
+	padding: 0 3px
+	border: solid #d7d7d7 1px
+	ul:first-child
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			cursor: pointer
+			border-bottom: solid #d7d7d7 1px
+			a
+				display: block
+				text-transform: uppercase
+				text-decoration: none
+				color: black
+				font-size: 11px
+		li:last-child
+			border: none
+		ul
+			display: none
+			margin: 0
+			list-style-type: none
+			li
+				border: none
+				a
+					text-decoration: underline
+					text-transform: none
+					color: $main_color
+					font-size: 12px
+.btn-menu-catalog
+	text-align: center
+	margin: 15px 0
+	position: relative
+	a
+		text-transform: uppercase
+		text-decoration: none
+		color: black
+		display: block
+		padding: 20px 0
+		border: solid #d7d7d7 1px
+	img
+		position: absolute
+		top: 40%
+		right: 10%
+		transition: transform 0.5s
+.change
+	transform: rotate(180deg)
+
+
+
+
+/*********************SEARCH*******************************/
+/*TOP*/
+.top-search
+	background-color: #eeeeef
+	padding: 28px 15px
+	font-size: 12px
+	#alphabet-search
+		#alp-select-search
+			border: solid #e9e8e7 1px
+			overflow: hidden
+			display: inline-block
+			select
+				cursor: pointer
+				border: none
+				width: 200px
+				padding: 6px
+				background: url('../img/cat_pl/search/sm-arrow.png') no-repeat white 50%
+				&:focus
+					outline: none
+	#params-search
+		a
+			text-decoration: none
+			color: black
+			background: url("../img/cat_pl/search/params.png") no-repeat 9% 50%
+			border-radius: 3px
+			width: 190px
+			height: 35px
+			border: solid #eeeeef 2px
+			&:hover
+				border: solid $main_color 2px
+	#wiev-top-search
+		padding: 15px 0 0 0
+		a
+			text-decoration: none
+			color: black
+			&:first-child
+				background: url('../img/cat_pl/search/tabwiev.png') no-repeat
+				&:hover
+					color: $main_color
+					text-decoration: underline
+					background: url('../img/cat_pl/search/tabwiev-how.png') no-repeat
+			&:last-child
+				background: url('../img/cat_pl/search/listwiev.png') no-repeat
+				&:hover
+					color: $main_color
+					text-decoration: underline
+					background: url('../img/cat_pl/search/listwiev-how.png') no-repeat
+/*BOTTOM*/
+.bottom-search
+	font-size: 12px
+	background-color: #f3f3f4
+	#price-search
+		label
+			font-weight: 400
+		input
+			width: 60px
+			height: 30px
+			padding: 7px
+			border: solid #eeeeef 1px
+			&:focus
+				outline: none
+	#all-search
+		position: relative
+		label
+			font-weight: 400
+			position: absolute
+			top: 12px
+			left: -60px
+		#all-select-search
+			border: solid #e9e8e7 1px
+			overflow: hidden
+			display: inline-block
+			width: 175px
+			select
+				cursor: pointer
+				border: none
+				width: 185px
+				padding: 6px
+				background: url('../img/cat_pl/search/sm-arrow.png') no-repeat white 50%
+				&:focus
+					outline: none
+	#description-search
+		#colors-description
+			label
+				font-weight: 400
+				margin-right: 10px
+			button
+				border: solid transparent 1px
+				width: 16px
+				height: 16px
+				&:focus
+					outline: none
+			button:nth-child(2)
+				background-color: transparent
+				border: solid black 1px
+			button:nth-child(3)
+				background-color: black
+			button:nth-child(4)
+				background-color: #78057a
+			button:nth-child(5)
+				background-color: #0803fd
+			button:nth-child(6)
+				background-color: #007f00
+			button:nth-child(7)
+				background-color: #ffa600
+			button:nth-child(8)
+				background-color: #d93600
+	#contain-checkbox-description
+		.checkbox-description
+			margin: 0
+			position: relative
+			float: left
+			p
+				padding: 0
+				margin: 0
+				display: block
+				position: absolute
+				top: 23px
+				left: 78px
+			label
+				cursor: pointer
+				position: absolute
+				width: 16px
+				height: 16px
+				top: 22px
+				left: 56px
+				background: white
+				border: solid #e9e8e7 1px
+				&:after
+					opacity: 0
+					content: ''
+					position: absolute
+					width: 9px
+					height: 5px
+					background: transparent
+					top: 3px
+					left: 3px
+					border: solid 2px $main_color
+					border-top: none
+					border-right: none
+					transform: rotate(-45deg)
+				&:hover::after
+					opacity: 0.3
+			input[type=checkbox]:checked + label:after
+				opacity: 1
+	#reset-filter
+		a
+			text-decoration: underline
+			color: $main_color
+		button
+			position: absolute
+			height: 11px
+			width: 23px
+			border: none
+			background: url('../img/cat_pl/search/arrow-up.png') no-repeat
+			&:focus
+				outline: none
+
+
+
+
+
+/*************************CONTENT-GRID***************************************/
+.block_wrapper
+	height: 400px
+	position: relative
+	margin: 4% 0
+	.block_grid_catalog
+		background-color: white
+		height: 400px
+		transition: all 0.1s ease-out
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		border: solid $background_color 2px
+		&:hover
+			height: 600px
+			border: solid $main_color 2px
+	.content_block_grid_catalog
+		margin: 0 auto
+		.vendor-block-grid
+			margin-top: 15px
+	.maindes-block-grid
+		p
+			margin: 0
+			padding: 0
+		p:first-child
+			font-size: 16px
+		p:last-child
+			color: #3f3f3f
+	.price-block-grid
+		margin-top: 20px
+		span:first-child
+			font-size: 22px
+			font-weight: bold
+		button:nth-child(3)
+			font-weight: 800
+			font-size: 16px
+			padding: 0 10px
+			color: white
+			background-color: $btn_color
+			position: absolute
+			border: none
+			top: 15px
+			&:focus
+				outline: none
+			&:hover
+				background-color: $main_color
+		button:nth-child(4)
+			border: none
+			padding: 0 12px
+			font-weight: 800
+			font-size: 16px
+			color: white
+			position: absolute
+			background-color: $btn_color
+			top: 40px
+			&:focus
+				outline: none
+			&:hover
+				background-color: $main_color
+		input
+			width: 35px
+			height: 35px
+			position: absolute
+			padding: 0 0 0 10px
+			top: 20px
+			&:focus
+				outline: none
+		button:nth-child(6)
+			border: none
+			width: 55px
+			height: 35px
+			position: absolute
+			top: 20px
+			border-radius: 3px
+			background: url("../img/cat_pl/grid/basket.png") no-repeat $main_color 50% 40%
+			&:focus
+				outline: none
+	.hiddendes-block-grid
+		display: none
+		ul
+			margin: 40px 0 0 35px
+			padding: 0
+			list-style-image: url("../img/cat_pl/grid/small-arrow.png")
+			li
+				margin-bottom: 5px
+	
+	/*owl-carusel*/
+	.grid-item
+		height: 180px
+		transition: margin 0.8s ease-out
+		margin: 0 auto
+		img
+			width: 80%
+			margin: 5px auto
+			height: auto
+	
+	.prev-grid, .next-grid
+		display: none
+		position: absolute
+		top: 80px
+		background-color: transparent
+		width: 11px
+		height: 23px
+	.prev-grid:hover, .next-grid:hover
+		background-color: white
+		opacity: 0.6
+	.owl-theme .owl-nav .prev-grid /*_________prev-button*/
+		left: 0
+	.owl-theme .owl-nav .next-grid /*_________next-button*/
+		right: 0
+
+.block-hover
+	z-index: 4
+
+#pagination-grid
+	margin-top: 25px
+	img
+		cursor: pointer
+	p
+		font-weight: bold
+		display: inline-block
+		padding: 0
+		margin: 0 10px
+		color: $btn_color
+
+
+
+
+/*****************************CONTACT LIST************************************/
+.block_list_catalog
+	cursor: pointer
+	margin: 15px 0 15px 0
+	height: 195px
+	border: solid $background_color 2px
+	&:hover
+		border: solid $main_color 2px
+	h3
+		font-size: 16px
+		text-transform: uppercase
+	p
+		margin-top: 5px
+		font-size: 12px
+	.btn-block_list_catalog
+		padding: 20px 0
+		position: relative
+		p
+			position: absolute
+			margin: 0
+		p:nth-child(1)
+			top: 0
+			left: 0
+		span:nth-child(2)
+			position: absolute
+			top: 25px
+			left: 0
+		p:nth-child(3)
+			top: 0
+			left: 70px
+		span:nth-child(4)
+			position: absolute
+			top: 20px
+			left: 70px
+			font-weight: bold
+			font-size: 22px
+			&:after
+				font-weight: 400
+				font-size: 14px
+				content: ' руб.'
+		button
+			color: white
+			border: none
+			position: absolute
+			&:focus
+				outline: none
+		button:nth-child(5)
+			font-weight: 800
+			padding: 0 10px
+			top: 3px
+			background-color: $btn_color
+			&:hover
+				background-color: $main_color
+		button:nth-child(6)
+			font-weight: 800
+			padding: 0 12px 0 11px
+			top: 23px
+			background-color: $btn_color
+			&:hover
+				background-color: $main_color
+		input:nth-child(7)
+			width: 37px
+			height: 37px
+			border: solid $btn_color 1px
+			position: absolute
+			padding: 0 0 0 13px
+			top: 3px
+			right: 40%
+		button:nth-child(8)
+			top: 2px
+			right: 5%
+			height: 39px
+			border-radius: 3px
+			text-transform: uppercase
+			padding: 0 0 0 25px
+
+
+
+
+/*************************PRODUCT***************************/
+#product-image
+	border: solid $border_color 1px
+	margin: 25px 0
+	box-shadow: 0 0 10px rgba(0,0,0,0.2)
+	#main-img-product
+		text-align: center
+		img
+			height: auto
+			vertical-align: middle
+	
+	#icon-img-product
+		width: 100%
+		img
+			height: 70px
+			width: 92px
+			cursor: pointer
+		/*owl-buttons*/
+		.prev-prod, .next-prod
+			position: absolute
+			top: 45px
+			background-color: white
+			width: 11px
+			height: 23px
+		.prev-prod:hover, .next-prod:hover
+			opacity: 0.5
+.owl-theme .owl-nav .prev-prod
+	left: 5px
+.owl-theme .owl-nav .next-prod
+	right: 5px
+
+#product-description
+	p
+		margin: 0
+	span
+		text-decoration: underline
+		a
+			cursor: pointer
+			color: $main_color
+
+#product-order
+	margin-top: 25px
+	table
+		text-align: center
+		width: 100%
+		border: solid $border_color 1px
+		border-collapse: collapse
+		thead
+			tr
+				background-color: #f3f3f3
+				height: 35px
+				border: solid $border_color 1px
+				td
+					border: solid $border_color 1px
+					font-weight: 500
+		tbody
+			tr
+				height: 50px
+				border: solid $border_color 1px
+				td
+					border: solid $border_color 1px
+					&:nth-child(1)
+						width: 10%
+						#color1-product
+							margin: 0 auto
+							height: 15px
+							width: 15px
+							background-color: white
+							border: solid black 1px
+						#color2-product
+							background-color: #88daef
+							margin: 0 auto
+							height: 16px
+							width: 16px
+						#color3-product
+							background-color: #ffcbdb
+							margin: 0 auto
+							height: 16px
+							width: 16px
+					&:nth-child(2)
+						width: 20%
+					&:nth-child(3)
+						width: 30%
+						color: #717171
+					&:nth-child(4)
+						color: $main_color
+						span
+							font-weight: bold
+					&:nth-child(5)
+						width: 20%
+						input
+							width: 30px
+							height: 20px
+							&:focus
+								outline: none
+
+#choose_an_action_product
+	button
+		margin-bottom: 15px
+		float: right
+		border: none
+		width: 185px
+		height: 40px
+		padding-left: 30px
+		border-radius: 3px
+		text-transform: uppercase
+		background: url(../img/cat_pl/product/basket.png) no-repeat 20% $main_color
+		color: white
+		&:focus
+			outline: none
+	a
+		color: $main_color
+		text-decoration: underline
+
+
+/*****************************CONTACTS********************************/
+#contacts
+	margin-top: 25px
+	#main-contacts
+		background-color: #f3f3f4
+		padding: 25px 35px 0 35px
+		ul
+			margin: 0 0 35px 0
+			padding: 0
+			list-style-type: none
+			li:first-child
+				font-weight: 500
+				text-transform: uppercase
+				margin-bottom: 20px
+	#map-contacts
+		margin-top: 15px
+		height: 360px
+		background: url('../img/cat_pl/contacts/map.png') no-repeat 35% 50%
+		background-size: cover
+	#form-contacts
+		margin-top: 45px
+		font-size: 12px
+		font-weight: 500
+		#input-form-contact
+			height: 170px
+			position: relative
+			label
+				position: absolute
+			input
+				height: 30px
+				padding-left: 10px
+				border: solid $border_color 1px
+				position: absolute
+				&:focus
+					outline: none
+			label:nth-child(1)
+				top: 5px
+			input:nth-child(2)
+				top: 0
+			label:nth-child(3)
+				top: 60px
+			input:nth-child(4)
+				top: 55px
+			label:nth-child(5)
+				top: 115px
+			input:nth-child(6)
+				top: 110px
+		#area-form-contact
+			position: relative
+			height: 170px
+			label
+				position: absolute
+				top: 5px
+			textarea
+				resize: none
+				border-color: $border_color
+				position: absolute
+				top: 0
+				height: 135px
+				&:focus
+					outline: none
+		#submit-contact
+			position: relative
+			a
+				display: block
+				color: white
+				text-decoration: none
+				width: 185px
+				height: 38px
+				background-color: $main_color
+				text-transform: uppercase
+				text-align: center
+				border-radius: 3px
+				padding-top: 12px
+				cursor: pointer
+
+/***************************ABOUT*****************************/
+#about
+	p
+		margin: 0
+	#first-about
+		margin-top: 20px
+	#second-about
+		margin: 20px 0
+	#list-about
+		
+		ul
+			padding: 0
+			list-style-type: none
+			li
+				margin-bottom: 20px
+				list-style-image: url("../img/cat_pl/about/ul_arrow.png")
+				&:last-child
+					list-style-image: none
+	#third-about
+		margin: 20px 0
+
+
+
+@import "media" // Always in the end

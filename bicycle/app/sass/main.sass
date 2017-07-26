@@ -1,0 +1,354 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+header
+	height: 800px
+	z-index: 10
+
+/*animated-button*/
+.menu_button
+	z-index: 3
+	position: fixed
+	top: 10px
+	left: 15px
+	display: inline-block
+	cursor: pointer
+	&:hover
+		opacity: 0.6
+.bar1, .bar2, .bar3
+	width: 35px
+	height: 5px
+	background-color: $main_color
+	margin: 6px 0
+	transition: 0.2s
+	border-radius: 3px
+.change .bar1
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px)
+	transform: rotate(-45deg) translate(-8px, 8px)
+	background-color: #4d4959
+.change .bar2
+	opacity: 0
+.change .bar3
+	-webkit-transform: rotate(45deg) translate(-8px, -8px)
+	transform: rotate(45deg) translate(-8px, -8px)
+	background-color: #4d4959
+
+/*menu*/
+.mobile_menu
+	z-index: 2
+	display: block
+	background-color: transparent
+
+.navigate
+	z-index: 2
+	display: none
+	width: 100%
+	height: 100%
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			a
+				font-weight: bold
+				font-size: 13px
+				display: block
+				text-transform: uppercase
+				text-decoration: none
+				color: #4d4959
+/*******************************************************************/
+
+/*********************ABOUT**************************/
+#about
+	height: 470px
+	background-color: $background_color
+	padding-top: 110px
+.content-block
+	margin: 0 auto
+	text-align: center
+	padding-top: 85px
+	background: url('../img/about.png') no-repeat 50% 5%
+	h3
+		font-weight: bold
+		text-transform: uppercase
+		margin: 0 0 30px 0
+		padding: 0
+	p
+		margin: 0
+		padding: 0
+		line-height: 25px
+
+/***********************WORK*************************/
+#work
+	z-index: 0
+	/*company*/
+	#company_work
+		height: 600px
+		background: url("../img/work/logo-company.png") no-repeat center
+	#vintage_work
+		height: 600px
+		#vintage_olive_work
+			height: 200px
+			width: 100%
+			background: url("../img/work/vintage.jpg") no-repeat center
+			background-size: cover
+	/* la */
+	#la_work
+		height: 600px
+		#la_boriosa_work
+			height: 200px
+			width: 100%
+			background: url("../img/work/la.jpg") no-repeat center
+			background-size: cover
+	#la_parallax_work
+		height: 600px
+		background: url("../img/work/la-logo.png") no-repeat center
+	/* retro */
+	#retro1_parallax_work
+		height: 600px
+		background: url("../img/work/retro-logo.png") no-repeat center
+	#retro_work
+		height: 600px
+		#retro_bottom_work
+			height: 200px
+			width: 100%
+			background: url("../img/work/retro-bottom.jpg") no-repeat center
+			background-size: cover
+	#retro2_parallax_work
+		height: 600px
+.work-block
+	position: relative
+	width: 400px
+	height: 400px
+	margin: 0 auto
+	padding: 130px 0 0 0
+	text-align: center
+	background: url(../img/work/line.png) no-repeat 50% 85%
+	img
+		position: absolute
+		top: 70px
+		left: 50%
+		transform: translate(-50%, -50%)
+	h3
+		text-transform: uppercase
+		font-weight: bold
+		margin: 0 0 20px 0
+	p
+		margin: 0
+		line-height: 20px
+
+/*******************CAROUSEL****************************/
+#carousel
+	height: 470px
+	background-color: $background_color
+	cursor: default
+	#owl-first
+		.item
+			text-align: center
+			height: 240px
+			background: url("../img/twitter.png") no-repeat 50% 10%
+			padding: 80px 0 0 0
+			h3
+				font-weight: bold
+				font-size: 18px
+				margin: 0 0 20px 0
+				letter-spacing: 2px
+				span
+					font-weight: 300
+					color: $text_color
+			p
+				font-style: italic
+				font-size: 24px
+/*owl-standart*/
+.owl-theme .owl-nav
+	-webkit-tap-highlight-color: transparent
+.owl-theme .owl-nav [class*='owl-']
+	display: inline-block
+	cursor: pointer
+.owl-theme .owl-nav .disabled
+	opacity: 0.5
+	cursor: default
+/*_________________________________________________DOTS*/
+.owl-theme .owl-nav.disabled + .owl-dots
+	margin-top: 10px
+.owl-theme .owl-dots
+	position: absolute
+	-webkit-tap-highlight-color: transparent
+.owl-theme .owl-dots .owl-dot
+	display: inline-block
+	zoom: 1
+
+#owl-first .owl-dots
+	position: absolute
+	top: 380px
+	left: 50%
+	transform: translate(-50%, -50%)
+
+#owl-first .owl-dots .owl-dot span
+	width: 10px
+	height: 10px
+	border: solid #a9afb3 1px
+	margin: 5px
+	background: transparent
+	display: block
+	-webkit-backface-visibility: visible
+	transition: opacity 200ms ease
+	border-radius: 10px
+
+#owl-first .owl-dots .owl-dot.active span, #owl-first .owl-dots .owl-dot:hover span
+	background: #a9afb3
+
+/**********************SHOP***************************/
+#shop
+	#first-block
+		transition: 0.5s
+		#first-shop
+			background: url("../img/shop/first.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+		#second-shop
+			background: url("../img/shop/second.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+		#third-shop
+			background: url("../img/shop/third.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+	#second-block
+		transition: 0.5s
+		#fourth-shop
+			background: url("../img/shop/fourth.jpg") no-repeat center
+			background-size: cover
+			height: 540px
+		#fifth-shop
+			background: url("../img/shop/fifth.jpg") no-repeat center
+			background-size: cover
+			height: 540px
+	#third-block
+		transition: 0.5s
+		#sixth-shop
+			background: url("../img/shop/sixth.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+			position: relative
+			a
+				position: absolute
+				top: 0
+				left: 0
+				background: url("../img/shop/icon.png") no-repeat center $main_color
+				display: block
+				height: 100%
+				width: 100%
+				opacity: 0.8
+		#seventh-shop
+			background: url("../img/shop/seventh.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+		#eighth-shop
+			background: url("../img/shop/eighth.jpg") no-repeat center
+			height: 270px
+			background-size: cover
+
+/***********************DISCOVER**************************/
+#discover
+	background-color: #282f35
+	height: 200px
+	padding-top: 75px
+	a
+		text-align: center
+		display: block
+		color: white
+		text-transform: uppercase
+		height: 50px
+		margin: 0 auto
+		padding-top: 17px
+		border: solid white 1px
+		font-weight: bold
+		font-size: 14px
+		text-decoration: none
+		transition: 1s
+		&:hover
+			background-color: $main_color
+			color: #282f35
+			border-color: #282f35
+
+/***************************CONTACT**************************/
+#contact
+	height: 470px
+	background: url("../img/logo.png") no-repeat 50% 30%
+	text-align: center
+	padding-top: 230px
+	#block-contact
+		margin: 0 auto
+		position: relative
+		transition: 1s
+		p
+			font-style: italic
+		input:nth-child(1)
+			position: absolute
+			height: 70px
+			border: solid #d3d7d9 1px
+			padding-left: 20px
+			color: #cdcdcd
+			font-style: italic
+			&:focus
+				outline: none
+		input:nth-child(2)
+			position: absolute
+			height: 70px
+			color: white
+			background-color: $main_color
+			border: none
+			font-style: italic
+			&:focus
+				outline: none
+
+/**********************FOOTER***********************/
+footer
+	transition: 0.5s
+	background-color: $background_color
+	#contact_footer
+		span
+			font-size: 16px
+			font-weight: bold
+		p
+			font-size: 14px
+			font-style: italic
+	#soc_networks
+		padding-top: 15px
+		text-align: center
+		a
+			margin-right: 5px
+	#yebo_footer
+		padding-top: 15px
+		a
+			display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always in the end

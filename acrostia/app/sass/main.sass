@@ -1,0 +1,509 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "owl-carousel.theme"
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	height: 100%
+	
+/**********************HEADER**************************/
+header
+	transition: 0.5s linear
+	transform: translate(-50%, 0)
+	left: 50%
+	z-index: 3
+	a
+		cursor: pointer
+		img
+			z-index: 20
+			padding: 35px 0 0 20px
+			position: absolute
+
+.menu_button
+	position: absolute
+	top: 30px
+	right: 20px
+	display: inline-block
+	cursor: pointer
+	z-index: 5
+	.bar1, .bar2, .bar3
+		width: 35px
+		height: 5px
+		background-color: $main_color
+		margin: 6px 0
+		transition: 0.2s
+		border-radius: 3px
+.change
+	.bar1
+		transform: rotate(-45deg) translate(-8px, 8px)
+		background-color: white
+	.bar2
+		opacity: 0
+	.bar3
+		transform: rotate(45deg) translate(-8px, -8px)
+		background-color: white
+		
+.bg-content
+	filter: blur(5px)
+	
+		
+/********************CONTENT*************************/
+
+.content-block
+	transition: 0.5s ease
+	position: relative
+	.header-block, .body-block
+		transition: 0.5s ease
+		margin: 0 auto
+	.header-block
+		text-align: center
+		padding: 80px 0 20px 0
+		h2
+			margin: 0
+			font-weight: 300
+			text-transform: uppercase
+	.body-block
+		.text-body
+			text-align: center
+			margin: 0 auto
+			h3
+				margin: 0 0 10px 0
+				font-size: 20px
+				text-transform: uppercase
+			p
+				margin: 0
+				font-size: 14px
+				padding-bottom: 70px
+		.main-body
+			padding: 0 20px 80px 20px
+			
+
+/* _________ HOME ____________*/
+.content-block[id="Home"]
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow: hidden
+	background-color: transparent
+	/*Carousel items*/
+	.item
+		background-size: cover
+		text-align: center
+		width: 100%
+		&[id="bg-first"]
+			background: url("../img/home/bg1.jpg") center no-repeat
+			background-size: cover
+		&[id="bg-second"]
+			background: url("../img/home/bg2.jpg") center no-repeat
+			background-size: cover
+		&[id="bg-third"]
+			background: url("../img/home/bg3.jpg") center no-repeat
+			background-size: cover
+		&:before
+			content: ''
+			display: inline-block
+			height: 100%
+			vertical-align: middle
+		.slogan-inner
+			margin: 0
+			opacity: 1
+			display: inline-block
+			vertical-align: middle
+			background-color: $btn_hover_color
+			border-radius: 3px
+			span
+				text-transform: uppercase
+			.left-slogan
+				width: 48%
+				float: left
+				padding-right: 10px
+				h1
+					color: $main_color
+					transition: 0.2s linear
+					line-height: 1
+					span
+						color: $main_color
+			.right-slogan
+				width: 52%
+				float: right
+				h1
+					color: $main_color
+					transition: 0.2s linear
+					margin: 0
+					span
+						color: $main_color
+
+
+
+/* _________ SERVICES ____________*/
+
+.content-block[id="Services"]
+	.body-block
+		.main-body
+			.service-block
+				background-color: #c45158
+				height: 400px
+				margin-top: 20px
+				text-align: center
+				img
+					margin-top: 42px
+				h3
+					margin: 25px 0 40px 0
+					font-size: 30px
+					font-weight: 300
+					text-transform: uppercase
+				span
+					display: block
+					width: 220px
+					margin: 0 auto
+					color: white
+					font-size: 14px
+					padding: 0
+					line-height: 1.3
+	
+/* _________ ABOUT ___________ */
+.content-block[id="About"]
+	.body-block
+		.text-body
+			p
+				padding-bottom: 40px
+			h3
+				cursor: default
+				text-transform: uppercase
+				margin: 0 0 20px 0
+				font-size: 25px
+				padding-top: 13px
+				font-weight: 600
+				background: url("../img/about/button-bg.png") no-repeat 50% 40%
+				height: 70px
+				
+	.about-block
+		transition: 0.5s linear
+		cursor: pointer
+		height: 400px
+		padding-top: 40px
+		margin-top: 20px
+		background-color: rgba(76, 63, 75, 0.5)
+		text-align: center
+		img
+			margin: 0 auto 15px auto
+		img:nth-child(1)
+			display: block
+		img:nth-child(2)
+			display: none
+		h3
+			margin: 0
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 25px
+			color: #c7b6c5
+			padding: 0
+		span
+			color: #a1ca6c
+			font-size: 14px
+			margin: 0
+		ul
+			background-color: yellow
+			width: 210px
+			margin: 30px auto 0 auto
+			padding: 0
+			list-style-type: none
+			li
+				float: left
+				margin: 0 10px
+				a
+					text-decoration: none
+					i
+						background-color: #a1859e
+						color: white
+						width: 32px
+						height: 32px
+						border-radius: 20px
+						padding: 7px 0 0 0
+		&:hover
+			background-color: rgba(76, 63, 75, 0.8)
+			img:nth-child(1)
+				display: none
+			img:nth-child(2)
+				display: block
+			h3
+				color: white
+			span
+				color: #d9796a
+			ul
+				li:nth-child(1)
+					a
+						i
+							background-color: #4f689e
+				li:nth-child(2)
+					a
+						i
+							background-color: #74c7d5
+				li:nth-child(3)
+					a
+						i
+							background-color: #df5c64
+				li:nth-child(4)
+					a
+						i
+							background-color: #3e61af
+
+
+/* _________ WORK ___________ */
+.content-block[id="Work"]
+	.body-block
+		.text-body
+			p
+				padding-bottom: 40px
+		.main-body
+			position: relative
+	
+.tab-work
+	overflow: hidden
+	border-top: 1px solid #94b963
+	border-bottom: 1px solid #94b963
+	background-color: transparent
+	margin: 10px 0 40px 0
+	height: 100px
+	padding-top: 30px
+	transition: 0.9s ease-out
+	button
+		float: right
+		background-color: inherit
+		border: none
+		outline: none
+		cursor: pointer
+		padding: 5px 10px
+		transition: 0.3s
+		border-radius: 4px
+		font-size: 16px
+		font-weight: 600
+		margin-left: 5px
+		color: white
+		&:hover
+			background-color: $btn_hover_color
+		&.active
+			background-color: #f5c149
+		
+	h4
+		font-weight: 600
+		font-size: 20px
+		text-transform: uppercase
+		margin: 0
+		padding: 5px 0 0 0
+		float: left
+	i
+		transition: 1s
+		right: 10%
+		top: 45px
+		color: white
+		font-size: 30px
+		position: absolute
+.change-arrow
+	transition: 1s
+	transform: rotate(180deg)
+	
+.change-tab-work
+	height: 300px
+	
+/* Style the tab content */
+.tabcontent-work
+	display: none
+	.portfolio-block
+		position: relative
+		margin: 5px auto 5px auto
+		height: 260px
+		width: 250px
+		background-color: #eeeeee
+		text-align: center
+		transition: 1s easy-out
+		cursor: pointer
+		&:hover
+			.portfolio-block-overlay
+				height: 200px
+				&:hover
+					button
+						display: block
+		img
+			height: 200px
+			width: 100%
+		.portfolio-block-overlay
+			transition: height 0.5s
+			position: absolute
+			top: 0
+			height: 0
+			width: 100%
+			background-color: #3d4c29
+			z-index: 2
+			opacity: 0.7
+			button
+				background: url("../img/work/portfolio/plus.png") no-repeat center transparent
+				height: 50px
+				width: 50px
+				position: absolute
+				display: none
+				left: 50%
+				top: 50%
+				border: none
+				transform: translate(-50%, -50%)
+				&:focus
+					outline: none
+		.portfolio-block-triangle
+			z-index: 3
+			position: absolute
+			transform: translate(-50%, -100%)
+			left: 50%
+			height: 34px
+			width: 34px
+			border: 17px solid transparent
+			border-bottom: solid #eeeeee 17px
+		p
+			margin: 17px 0 0 0
+			color: #727272
+			font-size: 14px
+			text-transform: uppercase
+			
+/* _______________ CONTACTS ___________________ */
+.content-block[id="Contacts"]
+	.body-block
+		.text-body
+			p
+				padding-bottom: 70px
+	.main-body
+		.address-contacts
+			width: 220px
+			margin: 0 auto
+			h3
+				margin: 0
+				font-weight: 300
+				font-size: 30px
+			h4
+				margin: 20px 0 15px 0
+				font-weight: 600
+				font-size: 20px
+				color: #c0dfda
+			p
+				font-size: 16px
+				line-height: 1.2
+				margin: 0
+				padding: 0
+			ul
+				margin: 60px 0 0 0
+				list-style-type: none
+				padding: 0
+				li
+					line-height: 1.2
+					color: #c0dfda
+					font-size: 16px
+					&:nth-child(1)
+						span
+							padding-left: 18px
+					&:nth-child(2)
+						span
+							padding-left: 38px
+					&:nth-child(3)
+						span
+							padding-left: 20px
+							a
+								text-decoration: underline
+								color: white
+					&:nth-child(4)
+						span
+							padding-left: 22px
+		.ask-contacts
+			text-align: center
+			transition: 1s linear
+			h3
+				margin: 0 0 27px 0
+				font-weight: 300
+				font-size: 30px
+			form
+				input, textarea
+					height: 40px
+					width: 260px
+					border: none
+					border-radius: 4px
+					color: #75b4aa
+					background-color: #68a097
+					font-size: 16px
+					padding-left: 20px
+					&::placeholder
+						color: #75b4aa
+					&:focus
+						background-color: white
+						outline: none
+				input[name="personal_name"]
+					margin-bottom: 10px
+				input[type="button"]
+					background-color: #df5c64
+					height: 50px
+					width: 260px
+					text-transform: uppercase
+					margin: 20px auto 0 auto
+					font-weight: 600
+					color: white
+					border-bottom: solid #c8535a 4px
+				textarea
+					height: 140px
+					margin: 10px 0
+					
+					
+#googleMap
+	width: 260px
+	height: 200px
+	margin: 60px auto 20px auto
+
+footer
+	transition: 1s ease-in
+	position: absolute
+	bottom: -150px
+	left: 0
+	height: 150px
+	width: 100%
+	background-color: #68a097
+	text-align: center
+	padding: 60px
+	ul
+		margin: 0
+		list-style-type: none
+		padding: 0
+		li
+			display: inline-block
+			margin-right: 2px
+			a
+				display: block
+				background-color: #82c8bd
+				height: 35px
+				width: 35px
+				border-radius: 20px
+				color: white
+				text-decoration: none
+				font-size: 20px
+				&:hover
+					color: white
+		li:nth-child(1)
+			a:hover
+				background-color: #4f689e
+		li:nth-child(2)
+			a:hover
+				background-color: #74c7d5
+		li:nth-child(3)
+			a:hover
+				background-color: #df5c64
+		li:nth-child(4)
+			a:hover
+				background-color: #3e61af
+	
+	
+	
+	
+@import "media" // Always in the end

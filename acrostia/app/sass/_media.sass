@@ -1,0 +1,339 @@
+@import "vars"
+/**************MEDIA**********************/
+
+/* screen before 480px*/
+/*col-xs*/
+
+/*HEADER*/
+header
+	position: relative
+	.tab
+		z-index: 5
+		display: none
+		background-color: $main_color
+		width: 70%
+		position: absolute
+		right: 0
+		opacity: 0.8
+		button
+			transform: translate(-50%, -50%)
+			position: absolute
+			left: 50%
+			border: none
+			background-color: transparent
+			color: white
+			width: 100%
+			&:hover
+				background-color: $btn_hover_color
+			&:focus
+				outline: none
+		button:nth-child(1)
+			top: 110px
+		button:nth-child(2)
+			top: 150px
+		button:nth-child(3)
+			top: 190px
+		button:nth-child(4)
+			top: 230px
+		button:nth-child(5)
+			top: 270px
+.menu_button
+	display: block
+
+/*CONTENT*/
+.content-block
+	.header-block, .body-block
+		width: 300px
+	.header-block
+		h2
+			font-size: 40px
+	.body-block
+		.text-body
+			width: 260px
+				
+
+.content-block[id="Home"]
+	.item
+		.slogan-inner
+			width: 200px
+			height: 170px
+			.left-slogan
+				width: 100%
+				text-align: right
+				padding-right: 10px
+				h1
+					font-weight: 300
+					font-size: 30px
+			.right-slogan
+				width: 100%
+				text-align: center
+				padding-top: 10px
+				h1
+					font-weight: 600
+					font-size: 40px
+/*WORK*/
+.tab-work
+	.btn-tablinks-work
+		display: none
+		button
+			position: absolute
+			transform: translate(-52%, -50%)
+			width: 90%
+			left: 50%
+			&:nth-child(1)
+				top: 270px
+			&:nth-child(2)
+				top: 220px
+			&:nth-child(3)
+				top: 170px
+			&:nth-child(4)
+				top: 120px
+	a
+		i
+			display: block
+/*CONTACTS*/
+.content-block[id="Contacts"]
+	.main-body
+		.ask-contacts
+			h3
+				text-align: center
+			form
+				input[name="email"]
+					margin: 0 0 10px 0
+				textarea
+					width: 260px
+			
+			
+			
+
+/*____________________________________________480*/
+@media screen and (min-width: 480px)
+
+	/*CONTENT*/
+	.content-block
+		.header-block, .body-block
+			width: 380px
+		.header-block
+			h2
+				font-size: 50px
+		.body-block
+			.text-body
+				width: 380px
+		
+	.content-block[id="Home"]
+		.item
+			.slogan-inner
+				width: 330px
+				height: 170px
+				.left-slogan
+					width: 100%
+					text-align: center
+					padding-right: 0
+					h1
+						font-weight: 300
+						font-size: 30px
+				.right-slogan
+					width: 100%
+					text-align: center
+					padding-top: 0
+					h1
+						font-weight: 600
+						font-size: 60px
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/*col-sm*/
+/*____________________________________________768*/
+@media screen and (min-width: 768px)
+	
+	/*CONTENT*/
+	.content-block
+		.header-block, .body-block
+			width: 650px
+		.body-block
+			.text-body
+				width: 650px
+			
+	.content-block[id="Home"]
+		.item
+			.slogan-inner
+				width: 550px
+				height: 170px
+				.left-slogan
+					width: 48%
+					text-align: right
+					padding: 30px 10px 0 0
+					h1
+						font-weight: 300
+						font-size: 32px
+				.right-slogan
+					width: 52%
+					text-align: left
+					padding: 47px 0 0 0
+					h1
+						font-weight: 600
+						font-size: 60px
+	/*WORK*/
+	.tab-work
+		.btn-tablinks-work
+			display: block
+			button
+				width: 110px
+				top: 0
+				left: 0
+				position: relative
+				transform: translate(0, 0)
+				&:nth-child(1)
+					top: 0
+				&:nth-child(2)
+					top: 0
+				&:nth-child(3)
+					top: 0
+				&:nth-child(4)
+					top: 0
+				
+		a
+			i
+				display: none
+	/*CONTACTS*/
+	.content-block[id="Contacts"]
+		.main-body
+			.ask-contacts
+				h3
+					text-align: left
+				form
+					input[name="email"]
+						margin: 0 0 10px 8px
+					textarea
+						width: 530px
+			
+			
+			
+				
+				
+/*col-md*/
+/*____________________________________________992*/
+@media screen and (min-width: 992px)
+
+	/*HEADER*/
+	header
+		position: relative
+		width: 900px
+		height: 72px
+		.tab
+			position: relative
+			padding-left: 30%
+			height: 72px
+			width: auto
+			display: inline-block
+			transition: 0.5s linear
+			overflow: hidden
+			background-color: transparent
+			button
+				position: static
+				transform: translate(0, 0)
+				background-color: inherit
+				border-bottom-left-radius: 4px
+				border-bottom-right-radius: 4px
+				height: 72px
+				width: 120px
+				padding: 30px 0 0 0
+				margin-right: 5px
+				float: left
+				border: none
+				outline: none
+				cursor: pointer
+				transition: 0.3s
+				color: white
+				/* Change background color of buttons on hover */
+				&:hover
+					background-color: $btn_hover_color
+				/* Create an active/current tablink class */
+				&.active
+					background-color: $btn_hover_color
+			button:nth-child(1)
+				&.active
+					background-color: $main_color
+	.menu_button
+		display: none
+
+	/*CONTENT*/
+	.content-block
+		.header-block, .body-block
+			width: 900px
+		.header-block
+			h2
+				font-size: 60px
+		.body-block
+			.text-body
+				width: 95%
+
+
+
+
+
+
+/*col-lg*/
+/*____________________________________________1200*/
+@media screen and (min-width: 1200px)
+
+	/*HEADER*/
+	header
+		width: 1140px
+		.tab
+			padding-left: 45%
+	
+	/*CONTENT*/
+	.content-block
+		.header-block, .body-block
+			width: 1140px
+	
+	.content-block[id="Home"]
+		.item
+			.slogan-inner
+				width: 840px
+				height: 170px
+				.left-slogan
+					width: 48%
+					text-align: right
+					padding: 23px 15px 0 0
+					h1
+						line-height: 1
+						font-weight: 300
+						font-size: 40px
+				.right-slogan
+					width: 52%
+					text-align: left
+					padding: 33px 0 0 0
+					h1
+						font-weight: 600
+						font-size: 90px
+	
+
+
+
+
+/*____________________________________________1600*/
+@media screen and (min-width: 1600px)
+
+	/*1600*/
+				
+				
+			
+
+
+
+
+
+
+
+/*____________________________________________1920*/
+@media screen and (min-width: 1920px)
+
+	/*1920*/

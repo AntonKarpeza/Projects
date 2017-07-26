@@ -1,5 +1,12 @@
 $(function() {
     $(document).ready(function(){
+
+        /*preloader*/
+        $(window).on("load", function(){
+            $('.preloader').delay(1000).fadeOut("slow");
+        });
+
+
 		/*menu - mobile menu*/
         var touch = $('.menu_img');
         var menu = $('.navigate');

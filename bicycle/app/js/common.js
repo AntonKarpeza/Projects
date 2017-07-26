@@ -4,7 +4,7 @@ $(function() {
         /*preloader*/
 
         $(window).on("load", function(){
-            $('.preloader').delay(1600).fadeOut("slow");
+            $('.preloader').delay(1200).fadeOut("slow");
         });
 
 		/* **************Parallax************ */

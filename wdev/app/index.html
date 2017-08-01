@@ -193,6 +193,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
+
 			<div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-2">
 				<div id="links-contacts" >
 					<div class="row">
@@ -225,23 +226,36 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-4 ">
-				<div id="mess-contacts">
-					<form>
-
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="admin@mail.com">
-						<input type="hidden" name="form_subject" value="Form Subject">
-						<!-- END Hidden Required Fields -->
-
-						<input type="text" name="Name" placeholder="Ваше имя" oninvalid="this.setCustomValidity('Вы не ввели имя')" required><br>
-						<input type="text" name="E-mail" placeholder="Ваш E-mail" oninvalid="this.setCustomValidity('Не корректно введен E-mail')"  required><br>
-						<textarea  name="Message" placeholder="Ваше сообщение" oninvalid="this.setCustomValidity('Вы не ввели сообщение')" required></textarea>
-						<button>отправить</button>
-
-					</form>
+				<div class="map">
+					<div id="googleMap"></div>
 				</div>
 			</div>
+
+
+
+
+			<!--<div class="col-xs-12 col-sm-6 col-lg-4 ">-->
+				<!--<div id="mess-contacts">-->
+					<!--<form>-->
+
+						<!--&lt;!&ndash; Hidden Required Fields &ndash;&gt;-->
+						<!--<input type="hidden" name="project_name" value="Site Name">-->
+						<!--<input type="hidden" name="admin_email" value="admin@mail.com">-->
+						<!--<input type="hidden" name="form_subject" value="Form Subject">-->
+						<!--&lt;!&ndash; END Hidden Required Fields &ndash;&gt;-->
+
+						<!--<input type="text" name="Name" placeholder="Ваше имя" oninvalid="this.setCustomValidity('Вы не ввели имя')" required><br>-->
+						<!--<input type="text" name="E-mail" placeholder="Ваш E-mail" oninvalid="this.setCustomValidity('Не корректно введен E-mail')"  required><br>-->
+						<!--<textarea  name="Message" placeholder="Ваше сообщение" oninvalid="this.setCustomValidity('Вы не ввели сообщение')" required></textarea>-->
+						<!--<button>отправить</button>-->
+
+					<!--</form>-->
+				<!--</div>-->
+			<!--</div>-->
+
+
+
+
 		</div>
 	</div>
 </section>
@@ -264,6 +278,7 @@
 <![endif]-->
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIZSzSJ5eKdV3u4cOxjbGc8XtO7MB_v00&callback=myMap"></script>
 
 </body>
 </html>

@@ -3,11 +3,11 @@ $(function() {
 
 		/*parallax*/
         //header
-        $('.parallax-header').parallax({
-            imageSrc: 'img/seattle-bg.jpg',
-            positionX: 'center',
-            speed: 0.2
-        });
+        // $('.parallax-header').parallax({
+        //     imageSrc: 'img/seattle-bg.jpg',
+        //     positionX: 'center',
+        //     speed: 0.2
+        // });
         function headerHeightDetect() {
             $(".parallax-header").css("height", $(window).height());
         }
@@ -18,11 +18,11 @@ $(function() {
 
 
         //portfolio
-        $('#portfolio').parallax({
-            imageSrc: 'img/portfolio/portfolio-bg.jpg',
-            positionX: 'center',
-            speed: 0.2
-        });
+        // $('#portfolio').parallax({
+        //     imageSrc: 'img/portfolio/portfolio-bg.jpg',
+        //     positionX: 'center',
+        //     speed: 0.2
+        // });
         function portfolioHeightDetect() {
             $("#portfolio").css("height", $(window).height());
         }
@@ -125,6 +125,7 @@ $(function() {
         $("#body-portfolio").animated("fadeInRight", "fadeOutRight");
         //contacts
         $("#links-contacts").animated("fadeInLeft", "fadeOutLeft");
+        $(".map").animated("fadeInRight", "fadeOutRight");
         $("#mess-contacts").animated("fadeInRight", "fadeOutRight");
 
     });

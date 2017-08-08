@@ -19,7 +19,7 @@ gulp.task('browser-sync', function () { // Create a task 'browser-sync'
 	browserSync({ //Perfome the browser
 		server: { //Definition of server parameters
 			baseDir: 'app',//Directory for server - folder 'app'
-			index: "about.html"//File that browser looks after
+			index: "list.html"//File that browser looks after
 		},
 		// tunnel: true,
 		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me

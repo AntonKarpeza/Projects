@@ -1,0 +1,79 @@
+/*owl-carousel buttons and dots style*/
+
+
+
+/***************************BUTTONS******************************/
+
+/* _______________________NAV-BUTTONS POSITIONS___________________________ */
+
+/*_________________________________________________________owl-FIRST(image)*/
+
+/*_________________________________________________________owl-SECOND(icon)*/
+
+/*****************************************************************/
+
+
+
+
+
+
+
+/* **************************DOTS******************************* */
+
+/*DEFAULT*/
+.owl-theme .owl-nav.disabled + .owl-dots
+	margin-top: 10px
+
+.owl-theme .owl-dots
+	position: absolute
+	-webkit-tap-highlight-color: transparent
+
+.owl-theme .owl-dots .owl-dot
+	display: inline-block /* important!!! */
+	zoom: 1
+	*display: inline
+
+/*________________________________DOTS POSITION______________________*/
+
+
+/*_________________________________________________________owl-FIRST*/
+#owl-first .owl-dots
+	position: absolute
+	top: 450px
+	right: 70%
+	.owl-dot
+		span
+			width: 20px
+			height: 20px
+			margin: 5px 7px
+			background: orange
+			display: block
+			-webkit-backface-visibility: visible
+			transition: opacity 200ms ease
+			/*border-radius: 30px;*/
+			&:hover
+				background: aquamarine
+	.owl-dot.active
+		span
+			background: white
+/*_________________________________________________________owl-SECOND*/
+#owl-second .owl-dots
+	position: absolute
+	top: 400px
+	right: 5%
+	.owl-dot
+		span
+			width: 15px
+			height: 15px
+			margin: 5px 7px
+			background: red
+			display: block
+			-webkit-backface-visibility: visible
+			transition: opacity 200ms ease
+			border-radius: 40px
+			&:hover
+				background: black
+	.owl-dot.active
+		span
+			background: antiquewhite
+/***********************************************************************/
